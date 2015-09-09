@@ -1,6 +1,19 @@
+'use strict';
+
 module.exports = function(grunt) {
   grunt.initConfig({
     package: grunt.file.readJSON('package.json'),
+    jshint: {
+      all: [
+        'Gruntfile.js',
+        'tasks/*.js',
+        'scripts/**/*.js'
+      ],
+      options: {
+        jshintrc: '.jshintrc',
+        reporter: require('jshint-stylish')
+      }
+    },
     less: {
       options: { paths: 'bower_components/' },
       app: {
@@ -19,7 +32,7 @@ module.exports = function(grunt) {
     handlebars: {
       all: {
         files: {
-          "dist/scripts/templates.js": ["templates/**/*.hbs"]
+          'dist/scripts/templates.js': ['templates/**/*.hbs']
         }
       }
     },
@@ -31,9 +44,10 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-handlebars');
   grunt.loadNpmTasks('grunt-browserify');
-  grunt.registerTask('default', ['less', 'copy', 'handlebars', 'browserify']);
+  grunt.registerTask('default', ['jshint', 'less', 'copy', 'handlebars', 'browserify']);
 };

@@ -1,3 +1,5 @@
+'use strict';
+
 var FooterView = require('./views/application/footer');
 var HeaderView = require('./views/application/header');
 var Router = require('./routers/application');
