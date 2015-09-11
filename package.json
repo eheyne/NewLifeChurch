@@ -1,4 +1,11 @@
 {
+  "name": "NewLifeChurch",
+  "version": "0.1.5",
+  "description": "New Life Church web site",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
   "devDependencies": {
     "grunt-browserify": "^4.0.0",
     "grunt-contrib-copy": "^0.8.1",
@@ -6,5 +13,15 @@
     "grunt-contrib-jshint": "^0.11.3",
     "grunt-contrib-less": "^1.0.1",
     "jshint-stylish": "^2.0.1"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eheyne/NewLifeChurch.git"
   }
 }
