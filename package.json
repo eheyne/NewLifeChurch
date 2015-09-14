@@ -4,7 +4,8 @@
   "description": "New Life Church web site",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "postintall": "grunt"
   },
   "devDependencies": {
     "grunt-browserify": "^4.0.0",
