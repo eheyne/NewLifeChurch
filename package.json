@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "postintall": "bower install && grunt"
+    "postinstall": "bower install && grunt"
   },
   "devDependencies": {
     "grunt-browserify": "^4.0.0",
