@@ -19,7 +19,9 @@ Finally, install dependencies with the following commands:
 
 ## Development
 
-Running `grunt` will build assets and serve them from a static web server.
+Running `grunt` will build assets and copy them to the dist folder so that they can be distributed.
+
+Running `npm run serve` will run the default `grunt` task and serve the files from the `dist` folder with a static web server.
 
 
 ### JSHint
