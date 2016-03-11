@@ -21,6 +21,8 @@ Finally, install dependencies with the following commands:
 
 Running `grunt` will build assets and copy them to the dist folder so that they can be distributed.
 
+After running `grunt` you can run `node index.js`, which will serve the files from the `dist` folder with a static web server.
+
 Running `npm run serve` will run the default `grunt` task and serve the files from the `dist` folder with a static web server.
 
 
